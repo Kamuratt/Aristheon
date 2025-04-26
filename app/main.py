@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
-from database import SessionLocal, Base, engine, User
-from login import router as login_router
-from utils import verify_access_token
+from app.database import SessionLocal, Base, engine, User
+from app.login import router as login_router
+from app.utils import verify_access_token
 from pydantic import BaseModel
 
 # Inicializando o app FastAPI

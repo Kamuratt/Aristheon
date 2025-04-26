@@ -3,8 +3,8 @@ from alembic import context
 import os
 from dotenv import load_dotenv
 from sqlalchemy import engine_from_config, pool
-from database import Base, engine  # Usa o engine do seu arquivo database.py
-from database import User, Product, PurchaseRequest, RefreshToken, AccessTokenBlacklist  # Importa suas models
+from app.database import Base, engine  # Usa o engine do seu arquivo database.py
+from app.database import User, Product, PurchaseRequest, RefreshToken, AccessTokenBlacklist  # Importa suas models
 from sqlalchemy.engine.url import URL
 
 # Carregar variáveis de ambiente

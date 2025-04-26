@@ -7,7 +7,7 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 
-from database import User, RefreshToken, AccessTokenBlacklist
+from app.database import User, RefreshToken, AccessTokenBlacklist
 
 # ----- Carrega variáveis do ambiente -----
 load_dotenv()

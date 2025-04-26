@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
-from database import User, Product, PurchaseRequest, UserRole, PRStatus
+from app.database import User, Product, PurchaseRequest, UserRole, PRStatus
 
 # Instância do CryptContext para hash de senhas
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")

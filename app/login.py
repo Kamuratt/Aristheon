@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, status, Depends
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-from database import SessionLocal, User
-from utils import verify_password, create_access_token, create_refresh_token  # Adicionamos create_refresh_token
+from app.database import SessionLocal, User
+from app.utils import verify_password, create_access_token, create_refresh_token  # Adicionamos create_refresh_token
 from fastapi.security import OAuth2PasswordBearer
 from datetime import timedelta
 
